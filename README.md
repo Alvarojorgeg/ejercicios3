@@ -1,8 +1,11 @@
+
 # Ejercicios by Alvaro Jorge Gonzalez
 
 https://github.com/Alvarojorgeg/ejercicios3.git
 
 Este proyecto contiene una serie de ejercicios organizados en carpetas, cada uno con su propio propósito y funcionalidad. A continuación, se describe cada ejercicio en detalle.
+
+![Diagrama de flujo](./diagram.png)
 
 ## Ejercicios
 
