@@ -1,3 +1,6 @@
-from ejercicio1.lanzador import iniciar_puzzle
+from clases.juego import Juego
 
-iniciar_puzzle()
+if __name__ == "__main__":
+    num_piedras = 74
+    juego = Juego(num_piedras)
+    juego.iniciar()
