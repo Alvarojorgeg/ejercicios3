@@ -1,11 +1,10 @@
-class Piramide:
-    def __init__(self, total_piedras):
-        self.piedras = total_piedras
+from .piramide import Piramide
 
-    def resolver(self, n, origen, destino, auxiliar):
-        if n == 1:
-            print(f"Mover piedra de {origen} a {destino}")
-        else:
-            self.resolver(n - 1, origen, auxiliar, destino)
-            print(f"Mover piedra de {origen} a {destino}")
-            self.resolver(n - 1, auxiliar, destino, origen)
+class Juego:
+    def __init__(self, num_piedras):
+        self.piramide = Piramide(num_piedras)
+
+    def iniciar(self):
+        print("Empieza el puzzle...")
+        self.piramide.resolver(self.piramide.piedras, "Columna Inicial", "Columna Final", "Columna Auxiliar")
+        print("Puzzle terminado.")
